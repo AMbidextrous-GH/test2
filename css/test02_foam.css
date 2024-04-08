@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body {
+  font-family: "Aoboshi One", serif;
+  background-image: url(../img/background04.jpg);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+  
+  form {
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
+  
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  }
+  
+  h1 {
+  text-align: center;
+  color: #0026fd;
+  margin-bottom: 20px;
+  }
+  
+  label {
+  font-size: 20px;  
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+  color: #0026fd;
+  }
+  
+  input, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  }
+
+  input[type="button"],input[type="submit"],button{
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    color:#677eff96;
+  }
+  
+  #buttonPassword {
+    display: inline-block;
+    font-weight: bold;
+    width: 25%; 
+    padding: 8px 20px;
+    vertical-align: top;
+    margin-left: 15px;
+    background-color: blue;
+    color:white ;
+  }
+
+  .buy{
+    max-width:800px;
+    width: 50%;
+    margin : 0 auto
+  }
+ 
+  .register {
+    position: relative;
+    
+  }
+  .register img {
+    position: absolute;
+    width: 100%;
+    display: block;
+    
+  }
+  .register:hover img:nth-of-type(2) {
+    opacity: 0;
+  }

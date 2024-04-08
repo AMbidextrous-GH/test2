@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8"/>
+  <title>foam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/test02_foam.css">
+  <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+ </head>
+ <body>
+  <form>
+   <h1>かいいんとうろく<br>&<br>こうにゅう ふぉ～む<br></h1>
+    <label for="name">なまえ</label>
+    <input type="text" id="name" name="name" placeholder="山田太郎" required>
+
+    <label for="phone">でんわ ばんごう</label>
+    <input type="tel" id="phone" name="phone" placeholder="01234567890" required>
+        
+    <div class="container">
+     <div class="h-adr">
+      <span class="p-country-name" style="display:none;">Japan</span>
+      <label for="adr">ゆうびん ばんごう</label>
+       <input class="p-postal-code" data-error-required="郵便番号は必須です" type="text" data-pattern="adr" placeholder=000XXXX size="8" maxlength="8" required>
+      <label for="adr">とどうふけん</label>
+       <input class="p-region" type="text" data-error-required="都道府県は必須です" placeholder=〇〇県 readonly required/>
+      <label for="adr">しくちょうそん</label>
+       <input class="p-locality" type="text" data-error-required="市区町村は必須です" placeholder=△△市 required readonly />
+      <label for="adr">ちょうめい</label>
+       <input class="p-street-address" type="text" data-error-required="町名は必須です" placeholder=▢▢町  required/>
+      <label for="adr">いこう の じゅうしょ</label>
+       <input class="p-extended-address" type="text" data-error-required="以降の住所は必須です" placeholder=✕✕番地✕✕マンション required/>
+     </div>
+    </div>
+    
+    <label for="email">めーる あどれす</label>
+    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+    <label for="cc-number">くれじっと ばんごう</label>
+    <input type="text" id="cc-number" inputmode="numeric" pattern="[0-9]{14,16}" title="14〜16桁の番号を入力してください" autocomplete="cc-number" />
+
+
+    <label for="password">ぱすわーど</label>
+    <input type="password" id="textPassword" placeholder="Password123" style="width:70%;" required>
+    <input type="button" id="buttonPassword" value="みえる" onclick="pushHideButton();">
+    
+    <div class="buy">
+      <div class="register">
+      <a href="test02_ty.html"style="vertical-align: top;">
+        <img src="./img/button_register.png" >
+        <img src="./img/button_here.png">
+      </a>
+      </div>
+    </div>
+   
+  </form>
+ <script type="text/javascript" src="./js/test02_foam.js"></script>
+ </body>
+</html>

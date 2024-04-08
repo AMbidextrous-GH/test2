@@ -1,0 +1,228 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  margin: 0;
+  background: url(../img/background06.jpg);
+  background-size:contain; 
+  font-family: "Kiwi Maru", serif;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+.itemlist ul li {
+  width: 40%;
+  margin: 10px 5%;
+  }
+ .item-form {
+   float: inherit;
+   text-align: right;
+ }
+ .item-form input {
+   margin-bottom: 5px;
+  }
+}
+.tab {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 20px 20px 500px;
+  font-size: 20px;
+}
+.tab p._a {
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+.tab p._a .link {
+  display: inline-block;
+  color: #607D8B;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.tab p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+.tabBox .tabArea {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.tabBox .tabArea .one_tab {
+  width: 25%;
+}
+.tabBox .tabArea .one_tab a {
+  display: block;
+  text-decoration: none;
+  transition-duration: 0.3s;
+  text-align: center;
+  color: black;
+}
+.tabBox .tabArea .one_tab a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.tabBox .tabArea .one_tab .tab_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  transition-duration: 0.3s;
+}
+.tabBox .tabArea .one_tab:nth-child(1) .tab_inner {
+  background-color: yellow;
+}
+.tabBox .tabArea .one_tab:nth-child(2) .tab_inner {
+  background-color: red;
+}
+.tabBox .tabArea .one_tab:nth-child(3) .tab_inner {
+  background-color: green;
+}
+.tabBox .tabArea .one_tab:nth-child(4) .tab_inner {
+  background-color: blue;
+}
+.tabBox .tabArea .one_tab a.select .tab_inner {
+  height: 80px;
+}
+.contents .tab_main {
+  display: none;
+  padding: 50px 25px;
+  text-align: center;
+  min-height: 280px;
+  border: 2px solid #94ad73;
+  transition-duration: 0.3s;
+  background-color: #fff;
+  
+}
+.tab_main.is_show {
+  display: block;
+}
+.tab_main:nth-child(1).is_show {
+  border: 2px solid yellow;
+}
+.tab_main:nth-child(2).is_show {
+  border: 2px solid red;
+}
+.tab_main:nth-child(3).is_show {
+  border: 2px solid green;
+}
+.tab_main:nth-child(4).is_show {
+  border: 2px solid blue;
+}
+
+.itemlist ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.itemlist ul li {
+  display: block;
+  float: left;
+  width: 30%;
+  margin: 10px 0;
+}
+.itemlist ul li:nth-child(3n-1) {
+  margin: 10px 5%;
+}
+.itemlist img {
+  width: 80%;
+}
+.item-form {
+  float: right;
+  margin-top: 15px;
+}
+.item-form input{
+  width: 20px;
+  padding: 0 5px;
+  text-align: right;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.spinner {
+  width: 70px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  background: none;
+  outline: none;
+  pointer-events: none;
+}
+.spinner::-webkit-inner-spin-button,
+.spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.spinner-sub,
+.spinner-add {
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 35px;
+}
+.disabled {
+  opacity: 0.3;
+  cursor: inherit;
+}
+table {
+  font-family: "Aoboshi One", serif;
+  font-size: 18px;
+  margin: auto;
+  width: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  border: solid 2px rgb(7, 4, 0);/*表全体を線で囲う*/
+}
+table th{/*thに対して*/
+  color: #000000;/*文字色*/
+  background: #13a100;/*背景色*/
+}
+table th, table td {
+  border: solid 1px black;
+}
+tfoot th{
+  background: #ffe600;
+}
+
+.buy{
+  max-width:800px;
+  width: 20%;
+  margin : 0 auto
+}
+img{
+  max-width:100%;
+  height:auto;
+}
+.buy_buy {
+  position: relative;
+}
+.buy_buy img {
+	position: absolute;
+	width: 100%;
+	display: block;
+}
+.buy_buy:hover img:nth-of-type(2) {
+	opacity: 0;
+}
