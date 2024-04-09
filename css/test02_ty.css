@@ -73,3 +73,14 @@ to {
     transform: translateY(0);
 }
 }
+
+.door {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+
+.door img {
+  height: 130px;
+  width: 80px;
+}
